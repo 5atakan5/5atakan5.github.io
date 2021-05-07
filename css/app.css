@@ -1,0 +1,111 @@
+body {
+  background-color: #333;
+  color: #c2c2c2;
+  padding: 5px 25px 25px;
+}
+
+h1 {
+  font-size: 56px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-top: 5px;
+  font-size: 42px;
+}
+
+h2:not(.lname):after {
+  content: "";
+  width: 120px;
+  border: 3px solid #f9c116;
+  color: #f9c116;
+  display: block;
+}
+
+p {
+  font-size: 22px;
+}
+
+header {
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mcontact {
+  float: left;
+  position: relative;
+  bottom: 10px;
+  cursor: pointer;
+  font-size: 64px;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  color: #e2e2e2;
+  text-decoration: none;
+}
+
+.mcontact:hover {
+  animation: glow 3s linear infinite alternate;
+}
+
+.mgithub {
+  position: relative;
+  float: right;
+}
+
+.mgithub img {
+  width: 64px;
+}
+
+main {
+  padding-bottom: 30px;
+}
+
+tr,
+tr.nohov span {
+  transition: all 0.9s;
+}
+
+tr:not(.nohov):hover,
+tr.nohov span:hover {
+  color: #f9c116;
+  cursor: crosshair;
+}
+
+th, tr.theadline {
+  color: #e2e2e2;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 26px;
+}
+tr {
+  color: #e2e2e2;
+  font-size: 20px;
+}
+tr td {
+  padding: 16px 0px 0px;
+}
+th:after,
+tr.theadline td:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 90px;
+  background: #f9c116;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f9c116, 0 0 40px #f9c116, 0 0 50px #f9c116, 0 0 60px #f9c116, 0 0 70px #f9c116;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
